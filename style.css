@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --gray: #f3f2f2;
+  --black: #000000;
+  --black2: #252525;
+  --black3: #121212;
+}
+
+.light {
+  --nav: var(--white);
+  --primary: var(--white);
+  --secondary: var(--gray);
+  --text: var(--black);
+  --button: var(--black);
+  --buttontext: var(--white);
+  --border: var(--black);
+}
+
+.dark {
+  --nav: var(--black2);
+  --primary: var(--black2);
+  --secondary: var(--black3);
+  --text: var(--white);
+  --button: #1a1717;
+  --buttontext: var(--white);
+  --border: #5e5e5e;
+}
+
+.chartMenu {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: var(--nav);
+  color: black;
+  font-weight: 700;
+}
+
+.chartMenu p {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: var(--text);
+}
+
+#logo {
+  width: 3rem;
+  margin-left: 1rem;
+}
+
+.themeButton {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  background-color: var(--button);
+  border: none;
+  border-radius: 1rem;
+  color: var(--buttontext);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  list-style: none;
+  padding: 0.8rem 1.5rem;
+}
+
+.themeButton:hover {
+  text-decoration: none;
+  transition: 0.3s;
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.chartCard {
+  padding: 6rem 0rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: right;
+  font-size: 1rem;
+}
+
+.chartBox {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 1.5rem;
+  border: solid 1px var(--border);
+  background-color: var(--white);
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0rem 4rem;
+}
+
+.inputBox {
+  width: 100%;
+  border-radius: 1.5rem;
+  border: solid 1px var(--border);
+  background-color: var(--primary);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+.inputTitle {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: var(--text);
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.inputColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  color: var(--text);
+}
+
+input {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.chartWrapper {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.infoBox {
+  width: 100%;
+  background-color: var(--primary);
+  padding: 2rem 0rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: solid 1px var(--border);
+  margin: 1.5rem;
+}
+
+.infoText {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  color: var(--text);
+}
+
+#demo {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: var(--black);
+}
+
+#myName {
+  color: black;
+}

@@ -1,0 +1,84 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Wheel of Life</title>
+</head>
+<body class="light">
+    <div class="chartMenu">
+        <p>Wheel of Life</p>
+        <img id="logo" src="./assets/color.png">
+        <button class="themeButton">Theme</button>
+    </div>
+    
+          <div class="chartCard">
+            <div class="inputWrapper">
+                <div class="infoBox">
+                  <p class="infoText">Enter Name:</p>
+                </div>
+
+                <div class="inputBox">
+                  <p class="inputTitle">Current State:</p><br>
+                    <div class="inputContainer">
+                      <div class="inputColumn">
+                        <label for="">Health, Physical <input oninput="changeCurrentHealthPhysical(this)" type="number" min="1" max="10" value="5" id="myCurrentHealthPhysical"></label><br>
+                        <label for="">Health, Mental <input oninput="changeCurrentHealthMental(this)" type="number" min="1" max="10" value="5" id="myCurrentHealthMental"></label><br>
+                        <label for="">Love <input oninput="changeCurrentLove(this)" type="number" min="1" max="10" value="5" id="myCurrentLove"></label><br>
+                        <label for="">Creativity/Expression <input oninput="changeCurrentCreativity(this)" type="number" min="1" max="10" value="5" id="myCurrentCreativity"></label><br>
+                        <label for="">Housing <input oninput="changeCurrentHousing(this)" type="number" min="1" max="10" value="5" id="myCurrentHousing"></label><br>
+                      </div>
+
+                      <div class="inputColumn">
+                        <label for="">Friends/Family <input oninput="changeCurrentFriends(this)" type="number" min="1" max="10" value="5" id="myCurrentFriends"></label><br>
+                        <label for="">Prosperity/Money <input oninput="changeCurrentMoney(this)" type="number" min="1" max="10" value="5" id="myCurrentMoney"></label><br>
+                        <label for="">Personal Development <input oninput="changeCurrentPersoanlDev(this)" type="number" min="1" max="10" value="5" id="myCurrentPersonalDev"></label><br>
+                        <label for="">Work <input oninput="changeCurrentWork(this)" type="number" min="1" max="10" value="5" id="myCurrentWork"></label><br>
+                        <label for="">Fun & Relaxation <input oninput="changeCurrentFun(this)" type="number" min="1" max="10" value="5" id="myCurrentFun"></label><br>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <p class="inputTitle">Ideal State:</p><br>
+                    <div class="inputContainer">
+                      <div class="inputColumn">
+                        <label for="">Health, Physical<input oninput="changeIdealHealthPhysical(this)" type="number" min="1" max="10" value="5" id="myIdealHealthPhysical"></label><br>
+                        <label for="">Health, Mental <input oninput="changeIdealHealthMental(this)" type="number" min="1" max="10" value="5" id="myIdealHealthMental"></label><br>
+                        <label for="">Love <input oninput="changeIdealLove(this)" type="number" min="1" max="10" value="5" id="myIdealLove"></label><br>
+                        <label for="">Creativity/Expression <input oninput="changeIdealCreativity(this)" type="number" min="1" max="10" value="5" id="myIdealCreativity"></label><br>
+                        <label for="">Housing <input oninput="changeIdealHousing(this)" type="number" min="1" max="10" value="5" id="myIdealHousing"></label><br>
+                      </div>
+
+                      <div class="inputColumn">
+                        <label for="">Friends/Family <input oninput="changeIdealFriends(this)" type="number" min="1" max="10" value="5" id="myIdealFriends"></label><br>
+                        <label for="">Prosperity/Money <input oninput="changeIdealMoney(this)" type="number" min="1" max="10" value="5" id="myIdealMoney"></label><br>
+                        <label for="">Personal Development <input oninput="changeIdealPersonalDev(this)" type="number" min="1" max="10" value="5" id="myIdealPersonalDev"></label><br>
+                        <label for="">Work <input oninput="changeIdealWork(this)" type="number" min="1" max="10" value="5" id="myIdealWork"></label><br>
+                        <label for="">Fun & Relaxation <input oninput="changeIdealFun(this)" type="number" min="1" max="10" value="5" id="myIdealFun"></label><br>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          
+          <div class="chartWrapper">
+            <div class="chartBox">
+              <canvas id="myChart"></canvas>
+              <br><br>
+              <label for="">Name <input oninput="changeName(this)" type="text" value="" id="myName"></label>
+                <br><br>
+              <p id="demo"></p>
+            </div>
+          </div>
+        
+          </div>
+  
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
