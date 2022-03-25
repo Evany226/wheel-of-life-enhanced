@@ -9,7 +9,7 @@
   --white: #ffffff;
   --gray: #f3f2f2;
   --black: #000000;
-  --black2: #252525;
+  --black2: #18171c;
   --black3: #121212;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .dark {
-  --nav: var(--black2);
+  --nav: var(--black);
   --primary: var(--black2);
   --secondary: var(--black3);
   --text: var(--white);
