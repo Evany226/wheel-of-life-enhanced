@@ -21,16 +21,18 @@
   --button: var(--black);
   --buttontext: var(--white);
   --border: var(--black);
+  --name: var(--black);
 }
 
 .dark {
-  --nav: var(--black);
+  --nav: var(--black2);
   --primary: var(--black2);
   --secondary: var(--black3);
   --text: var(--white);
-  --button: #1a1717;
+  --button: var(--black);
   --buttontext: var(--white);
   --border: #5e5e5e;
+  --name: var(--white);
 }
 
 .chartMenu {
@@ -94,7 +96,7 @@
   padding: 10px;
   border-radius: 1.5rem;
   border: solid 1px var(--border);
-  background-color: var(--white);
+  background-color: var(--primary);
 }
 
 .inputWrapper {
@@ -209,9 +211,10 @@ input {
 
 #name {
   margin: 2rem;
-  font-size: 3.5rem;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
+  color: var(--black);
 }
 
 .infoBox {
@@ -238,10 +241,11 @@ input {
 
 #demo {
   font-size: 1.5rem;
-  padding: 1.5rem;
-  color: var(--black);
+  color: var(--text);
+
 }
 
 #myName {
-  color: black;
+  color: var(--name);
+  font-size: 2.5rem;
 }
