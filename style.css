@@ -35,6 +35,17 @@
   --name: var(--white);
 }
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid var(--border);
+  height: 2rem;
+  width: 1rem;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+
 .chartMenu {
   display: flex;
   align-items: center;
@@ -163,7 +174,18 @@
   height: 40%;
   width: 30%;
   text-align: center;
+  position: relative;
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 7px;
+  background: var(--secondary);
+  border-radius: 5px;
+  border: solid 0.1rem var(--border);
+  background-size: 70% 100%;
+}
+
 
 label {
   font-size: 1.5rem;
@@ -248,4 +270,25 @@ input {
 #myName {
   color: var(--name);
   font-size: 2.5rem;
+}
+
+@media print {
+  .inputWrapper {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .chartWrapper {
+    width: 90%;
+    padding: 0;
+  }
+
+  .chartCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 }

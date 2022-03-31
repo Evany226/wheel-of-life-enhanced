@@ -13,7 +13,7 @@
   />
   <title>Wheel of Life</title>
  </head>
- <body class="light">
+ <body class="light" id="body">
   <div class="chartMenu">
    <p>Wheel of Life</p>
    <img id="logo" src="./assets/color.png" />
@@ -36,7 +36,7 @@
         </label>
         <input
          oninput="changeCurrentHealthPhysical(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -45,13 +45,14 @@
         />
        </div>
 
+
        <div class="outer-label-cont">
         <label for="changeCurrentHealthMental" class="label-txt"
          >Health, Mental
         </label>
         <input
          oninput="changeCurrentHealthMental(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -64,7 +65,7 @@
         <label for="myCurrentLove" class="label-txt">Love </label>
         <input
          oninput="changeCurrentLove(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -79,7 +80,7 @@
         </label>
         <input
          oninput="changeCurrentCreativity(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -94,7 +95,7 @@
         </label>
         <input
          oninput="changeCurrentHousing(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -110,7 +111,7 @@
         </label>
         <input
          oninput="changeCurrentFriends(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -125,7 +126,7 @@
         </label>
         <input
          oninput="changeCurrentMoney(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -140,7 +141,7 @@
         </label>
         <input
          oninput="changeCurrentPersonalDev(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -153,7 +154,7 @@
         <label for="myCurrentWork" class="label-txt">Work </label>
         <input
          oninput="changeCurrentWork(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -168,7 +169,7 @@
         </label>
         <input
          oninput="changeCurrentFun(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -190,7 +191,7 @@
         >
         <input
          oninput="changeIdealHealthPhysical(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -205,7 +206,7 @@
         </label>
         <input
          oninput="changeIdealHealthMental(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -218,7 +219,7 @@
         <label for="myIdealLove" class="label-txt">Love </label>
         <input
          oninput="changeIdealLove(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -233,7 +234,7 @@
         </label>
         <input
          oninput="changeIdealCreativity(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -246,7 +247,7 @@
         <label for="myIdealHousing" class="label-txt">Housing </label>
         <input
          oninput="changeIdealHousing(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -263,7 +264,7 @@
         </label>
         <input
          oninput="changeIdealFriends(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -278,7 +279,7 @@
         </label>
         <input
          oninput="changeIdealMoney(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -293,7 +294,7 @@
         </label>
         <input
          oninput="changeIdealPersonalDev(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -306,7 +307,7 @@
         <label for="myIdealWork" class="label-txt">Work </label>
         <input
          oninput="changeIdealWork(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -321,7 +322,7 @@
         </label>
         <input
          oninput="changeIdealFun(this)"
-         type="number"
+         type="range"
          min="1"
          max="10"
          value="5"
@@ -352,6 +353,7 @@
   </div>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
 
   <script
    type="text/javascript"
