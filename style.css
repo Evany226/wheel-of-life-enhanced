@@ -49,7 +49,8 @@ input[type=range]::-webkit-slider-thumb {
 .chartMenu {
   display: flex;
   align-items: center;
-  width: 100vw;
+  justify-content: space-between;
+  width: 100%;
   height: 4.5rem;
   background-color: var(--nav);
   color: black;
@@ -67,10 +68,18 @@ input[type=range]::-webkit-slider-thumb {
   margin-left: 1rem;
 }
 
-.themeButton {
+.button-menu {
+  display: flex;
   position: absolute;
   right: 1rem;
   top: 0.5rem;
+}
+
+.logo-menu {
+  display: flex;
+}
+
+.buttonStyle {
   background-color: var(--button);
   border: none;
   border-radius: 1rem;
@@ -81,9 +90,10 @@ input[type=range]::-webkit-slider-thumb {
   font-weight: 500;
   list-style: none;
   padding: 0.8rem 1.5rem;
+  margin-right: 1rem;
 }
 
-.themeButton:hover {
+.buttonStyle:hover {
   text-decoration: none;
   transition: 0.3s;
   transform: translateY(-3px);

@@ -1,4 +1,4 @@
-document.querySelector(".themeButton").addEventListener("click", function () {
+document.querySelector("#themeButton").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
@@ -6,6 +6,10 @@ document.querySelector(".themeButton").addEventListener("click", function () {
     document.body.classList.add("light");
     document.body.classList.remove("dark");
   }
+});
+
+document.querySelector("#printButton").addEventListener("click", function () {
+  window.print();
 });
 
 const form = document.querySelector("#form");
