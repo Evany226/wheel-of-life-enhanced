@@ -110,6 +110,11 @@ input[type=range]::-webkit-slider-thumb {
   background-color: var(--primary);
 }
 
+#mychart {
+  background-color: white;
+  margin: 2rem;
+}
+
 .inputWrapper {
   display: flex;
   flex-direction: column;
@@ -265,11 +270,18 @@ input {
   font-size: 1.5rem;
   color: var(--text);
 
+
 }
 
 #myName {
   color: var(--name);
   font-size: 2.5rem;
+}
+
+.sliderNumber {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  color: var(--name);
 }
 
 @media print {
