@@ -32,9 +32,9 @@
 
 
     <div class="inputBox">
-     <p class="inputTitle">Current State:</p>
      <div class="inputContainer">
-      <div class="inputColumn">
+      <span class="inputColumn">
+        <p class="inputTitle">Current State</p>
        <div class="outer-label-cont">
         <label for="changeCurrentHealthPhysical" class="label-txt"
          >Health, Physical
@@ -114,8 +114,7 @@
         />
         <div id="current5" class="sliderNumber"></div>
        </div>
-      </div>
-      <div class="inputColumn">
+
        <div class="outer-label-cont">
         <label for="myCurrentFriends" class="label-txt"
          >Friends/Family
@@ -193,172 +192,171 @@
         />
         <div id="current10" class="sliderNumber"></div>
        </div>
-      </div>
+       
+      </span>
+
+
+      <div class="inputColumn">
+        <p class="inputTitle">Ideal State</p>
+        <div class="outer-label-cont">
+         <label for="myIdealHealthPhysical" class="label-txt"
+          >Health, Physical</label
+         >
+         <input
+          oninput="changeIdealHealthPhysical(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealHealthPhysical"
+          class="state-input"
+         />
+         <div id="ideal1" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealHealthMental" class="label-txt"
+          >Health, Mental
+         </label>
+         <input
+          oninput="changeIdealHealthMental(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealHealthMental"
+          class="state-input"
+         />
+         <div id="ideal2" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealLove" class="label-txt">Love </label>
+         <input
+          oninput="changeIdealLove(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealLove"
+          class="state-input"
+         />
+         <div id="ideal3" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealCreativity" class="label-txt"
+          >Creativity/Expression
+         </label>
+         <input
+          oninput="changeIdealCreativity(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealCreativity"
+          class="state-input"
+         />
+         <div id="ideal4" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealHousing" class="label-txt">Housing </label>
+         <input
+          oninput="changeIdealHousing(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealHousing"
+          class="state-input"
+         />
+         <div id="ideal5" class="sliderNumber"></div>
+        </div>
+
+        <div class="outer-label-cont">
+         <label for="myIdealFriends" class="label-txt"
+          >Friends/Family
+         </label>
+         <input
+          oninput="changeIdealFriends(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealFriends"
+          class="state-input"
+         />
+         <div id="ideal6" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealMoney" class="label-txt"
+          >Prosperity/Money
+         </label>
+         <input
+          oninput="changeIdealMoney(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealMoney"
+          class="state-input"
+         />
+         <div id="ideal7" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealPersonalDev" class="label-txt"
+          >Personal Development
+         </label>
+         <input
+          oninput="changeIdealPersonalDev(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealPersonalDev"
+          class="state-input"
+         />
+         <div id="ideal8" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealWork" class="label-txt">Work </label>
+         <input
+          oninput="changeIdealWork(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealWork"
+          class="state-input"
+         />
+         <div id="ideal9" class="sliderNumber"></div>
+        </div>
+ 
+        <div class="outer-label-cont">
+         <label for="myIdealFun" class="label-txt"
+          >Fun & Relaxation
+         </label>
+         <input
+          oninput="changeIdealFun(this)"
+          type="range"
+          min="1"
+          max="10"
+          value="10"
+          id="myIdealFun"
+          class="state-input"
+         />
+         <div id="ideal10" class="sliderNumber"></div>
+        </div>
+       </div>
+      
      </div>
     </div>
 
-    <div class="inputBox">
-     <p class="inputTitle">Ideal State:</p>
-     <div class="inputContainer">
-      <div class="inputColumn">
-       <div class="outer-label-cont">
-        <label for="myIdealHealthPhysical" class="label-txt"
-         >Health, Physical</label
-        >
-        <input
-         oninput="changeIdealHealthPhysical(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealHealthPhysical"
-         class="state-input"
-        />
-        <div id="ideal1" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealHealthMental" class="label-txt"
-         >Health, Mental
-        </label>
-        <input
-         oninput="changeIdealHealthMental(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealHealthMental"
-         class="state-input"
-        />
-        <div id="ideal2" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealLove" class="label-txt">Love </label>
-        <input
-         oninput="changeIdealLove(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealLove"
-         class="state-input"
-        />
-        <div id="ideal3" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealCreativity" class="label-txt"
-         >Creativity/Expression
-        </label>
-        <input
-         oninput="changeIdealCreativity(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealCreativity"
-         class="state-input"
-        />
-        <div id="ideal4" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealHousing" class="label-txt">Housing </label>
-        <input
-         oninput="changeIdealHousing(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealHousing"
-         class="state-input"
-        />
-        <div id="ideal5" class="sliderNumber"></div>
-       </div>
-      </div>
-
-      <div class="inputColumn">
-       <div class="outer-label-cont">
-        <label for="myIdealFriends" class="label-txt"
-         >Friends/Family
-        </label>
-        <input
-         oninput="changeIdealFriends(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealFriends"
-         class="state-input"
-        />
-        <div id="ideal6" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealMoney" class="label-txt"
-         >Prosperity/Money
-        </label>
-        <input
-         oninput="changeIdealMoney(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealMoney"
-         class="state-input"
-        />
-        <div id="ideal7" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealPersonalDev" class="label-txt"
-         >Personal Development
-        </label>
-        <input
-         oninput="changeIdealPersonalDev(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealPersonalDev"
-         class="state-input"
-        />
-        <div id="ideal8" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealWork" class="label-txt">Work </label>
-        <input
-         oninput="changeIdealWork(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealWork"
-         class="state-input"
-        />
-        <div id="ideal9" class="sliderNumber"></div>
-       </div>
-
-       <div class="outer-label-cont">
-        <label for="myIdealFun" class="label-txt"
-         >Fun & Relaxation
-        </label>
-        <input
-         oninput="changeIdealFun(this)"
-         type="range"
-         min="1"
-         max="10"
-         value="10"
-         id="myIdealFun"
-         class="state-input"
-        />
-        <div id="ideal10" class="sliderNumber"></div>
-       </div>
-      </div>
-     </div>
-    </div>
+    
    </div>
 
    <div class="chartWrapper">
